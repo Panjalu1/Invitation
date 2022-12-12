@@ -6,7 +6,7 @@ import Gambar4 from "../assets/img/4.svg";
 
 function cover() {
   return (
-    <div className="container w-screen h-screen mx-auto">
+    <div className="container relative h-screen mx-auto overflow-hidden">
       <img
         src={Gambar1}
         alt="Gambar 1"
@@ -25,7 +25,7 @@ function cover() {
       <img
         src={Gambar4}
         alt="Gambar 4"
-        className="absolute bottom-0 right-[-50px] w-44"
+        className="absolute bottom-0  right-[-50px] w-44"
       ></img>
       <div className="text-center">
         <div className="my-20">
@@ -38,8 +38,8 @@ function cover() {
           <h1>Afif</h1>
         </div>
         <div className="absolute inset-x-0 bottom-20">
-          <button className="px-3 py-1 bg-[#C0AD82] rounded-2xl">
-            Buka Undangan
+          <button className="px-5 text-white py-1 bg-[#C0AD82] rounded-2xl">
+            Buka Undangan <box-icon name="chevron-right"></box-icon>
           </button>
         </div>
       </div>
