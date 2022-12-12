@@ -39,7 +39,7 @@ function cover() {
         </div>
         <div className="absolute inset-x-0 bottom-20">
           <button className="px-5 text-white py-1 bg-[#C0AD82] rounded-2xl">
-            Buka Undangan <box-icon name="chevron-right"></box-icon>
+            Buka Undangan&emsp;<strong>&#62;</strong>
           </button>
         </div>
       </div>

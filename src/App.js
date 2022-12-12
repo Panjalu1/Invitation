@@ -3,6 +3,8 @@ import PointSection from "./Component/pointSections";
 import DateSection from "./Component/dateSection";
 import GalerySection from "./Component/galerySection";
 import FormSection from "./Component/formSection";
+import ClosingSection from "./Component/closing";
+import Footer from "./Component/footer";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <DateSection />
       <GalerySection />
       <FormSection />
+      <ClosingSection />
+      <Footer />
     </div>
   );
 }
