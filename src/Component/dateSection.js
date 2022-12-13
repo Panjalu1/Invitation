@@ -13,7 +13,7 @@ function DateSection() {
   });
 
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 4000 });
   }, []);
   return (
     <div className="container mx-auto">
@@ -23,7 +23,7 @@ function DateSection() {
         </p>
         <p className="text-2xl font-Garamond">{data?.marriage?.party?.day}</p>
         <hr className="mx-12 bg-black" />
-        <div className="grid grid-cols-3 gap-x-4">
+        <div className="flex justify-center grid-cols-3 gap-x-4">
           <div className="text-4xl text-end font-Garamond">
             {data?.marriage?.party?.date.slice(8, 10)}
           </div>

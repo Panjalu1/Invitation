@@ -6,6 +6,7 @@ import Gambar4 from "../assets/img/4.svg";
 import { BrideContext } from "../utils/Context";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-scroll";
 
 function Cover() {
   const data = useContext(BrideContext);
@@ -58,9 +59,11 @@ function Cover() {
         </div>
       </div>
       <div className="absolute inset-x-0 text-center bottom-[10%]">
-        <button className="px-5 text-white py-1 bg-[#C0AD82] rounded-2xl font-Garamond">
-          Buka Undangan&emsp;<strong>&#62;</strong>
-        </button>
+        <Link to="pointSection" smooth={true} spy={true}>
+          <button className="px-5 text-white py-1 bg-[#C0AD82] rounded-2xl font-Garamond">
+            Buka Undangan&emsp;<strong>&#62;</strong>
+          </button>
+        </Link>
       </div>
     </div>
   );

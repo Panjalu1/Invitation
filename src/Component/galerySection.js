@@ -11,7 +11,9 @@ function GalerySection() {
       className="container relative mx-auto text-center"
       data-aos={"fade-up"}
     >
-      <div className="font-bold align-center text-8xl">Galeri</div>
+      <div className="font-bold h-[50vh] text-8xl">
+        <p>Galeri</p>
+      </div>
       <div className="my-10">
         <img src={Gambar9} alt="Gambar 9" className="mx-5"></img>
       </div>

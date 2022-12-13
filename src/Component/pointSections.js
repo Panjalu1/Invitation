@@ -12,7 +12,10 @@ function PointSections() {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="container relative mx-auto overflow-hidden pb-52">
+    <div
+      id="pointSection"
+      className="container relative mx-auto overflow-hidden pb-52"
+    >
       <div className="absolute bottom-0 w-40 -right-10">
         <img src={Gambar6} alt="Gambar 6"></img>
       </div>
