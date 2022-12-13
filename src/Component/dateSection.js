@@ -7,14 +7,10 @@ import Aos from "aos";
 
 function DateSection() {
   const data = useContext(BrideContext);
-  console.log(data, "databos");
-
-  // const date = "data";
-
-  // const nameOfMonthId = date.toLocalString("id", {
-  //   month: "long",
-  // });
-  // console.log(nameOfMonthId);
+  console.log(data, "datass");
+  const date = new Date(data?.marriage?.party?.date).toLocaleString("id", {
+    month: "long",
+  });
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -32,7 +28,7 @@ function DateSection() {
             {data?.marriage?.party?.date.slice(8, 10)}
           </div>
           <div className="grid col-span-2 text-start font-Garamond">
-            <div className="text-2xl">Desember</div>
+            <div className="text-2xl">{date}</div>
             <div>{data?.marriage?.party?.date.slice(0, 4)}</div>
           </div>
         </div>
