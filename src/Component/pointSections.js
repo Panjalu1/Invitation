@@ -24,27 +24,39 @@ function PointSections() {
         data-aos={"fade-up"}
       >
         <h1 className="my-5">Bismillahiroohmanirrohim</h1>
-        <h1 className="mt-5">Assalamualaikum warohmatullohi wabarokatuh</h1>
+        <h1 className="my-5">Assalamualaikum warohmatullohi wabarokatuh</h1>
         <p>Dengan memohon rahma dan ridho Alloh SWT,</p>
         <p>Kami bermaksud menyelenggarakan resepsi</p>
         <p>pernikahan kami:</p>
         <div className="grid grid-cols-4 my-10 space-x-5">
-          <div className="w-20 h-20 bg-[#4B3A28] mx-5 rounded-full"></div>
+          <div className="mt-[20%] w-20 h-20 bg-[#4B3A28] mx-5 rounded-full"></div>
           <div className="col-span-3 text-start">
-            <h1>{data?.bride?.first.fullname}</h1>
-            <p>Putri kedua dari {data?.bride?.first.parent}</p>
-            <p>{data?.bride?.first.location}</p>
+            <h1 className="text-3xl font-medium font-Caveat text-[#9F7730]">
+              {data?.bride?.first.fullname}
+            </h1>
+            <p className="text-xs font-semibold font-Garamond">
+              Putri kedua dari {data?.bride?.first.parent}
+            </p>
+            <p className="text-xs font-semibold font-Garamond">
+              {data?.bride?.first.location}
+            </p>
           </div>
         </div>
-        <div className="my-10">
+        <div className="my-5">
           <img src={Gambar10} alt="Gambar 10" className="mx-10"></img>
         </div>
-        <div className="grid grid-cols-4 space-x-5 ">
-          <div className="w-20 h-20 bg-[#4B3A28] rounded-full mx-5 z-40"></div>
+        <div className="grid grid-cols-4 mt-5 space-x-5">
+          <div className="w-20 h-20 mt-[20%] bg-[#4B3A28] rounded-full mx-5 z-40"></div>
           <div className="z-40 col-span-3 text-xs text-start">
-            <h1>{data?.bride?.second.fullname}</h1>
-            <p>Putra kedua {data?.bride?.second.parent}</p>
-            <p>{data?.bride?.second.location}</p>
+            <h1 className="text-3xl font-medium font-Caveat text-[#9F7730]">
+              {data?.bride?.second.fullname}
+            </h1>
+            <p className="text-xs font-semibold font-Garamond">
+              Putra kedua {data?.bride?.second.parent}
+            </p>
+            <p className="text-xs font-semibold font-Garamond">
+              {data?.bride?.second.location}
+            </p>
           </div>
         </div>
       </div>

@@ -24,6 +24,8 @@ export const ContextPengantin = ({ children }) => {
   }, []);
 
   return (
-    <BrideContext.Provider value={bride}>{children}</BrideContext.Provider>
+    <>
+      <BrideContext.Provider value={bride}>{children}</BrideContext.Provider>
+    </>
   );
 };

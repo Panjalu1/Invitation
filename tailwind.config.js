@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Garamond: ["EB Garamond", "serif"],
+        Caveat: ["Caveat", "cursive"],
       },
     },
   },

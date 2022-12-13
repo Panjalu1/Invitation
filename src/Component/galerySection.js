@@ -1,9 +1,16 @@
-import React from "react";
+import { useEffect } from "react";
 import Gambar9 from "../assets/img/9.svg";
+import Aos from "aos";
 
-function galerySection() {
+function GalerySection() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="container relative mx-auto text-center">
+    <div
+      className="container relative mx-auto text-center"
+      data-aos={"fade-up"}
+    >
       <div className="font-bold align-center text-8xl">Galeri</div>
       <div className="my-10">
         <img src={Gambar9} alt="Gambar 9" className="mx-5"></img>
@@ -12,4 +19,4 @@ function galerySection() {
   );
 }
 
-export default galerySection;
+export default GalerySection;

@@ -39,22 +39,28 @@ function Cover() {
       ></img>
       <div className="text-center" data-aos={"fade-up"}>
         <div className="my-20">
-          <p className="">
+          <p className="tracking-widest font-Garamond">
             WALIMATUL
             <br />
             URSY
           </p>
         </div>
-        <div className="">
-          <h1>{data?.bride?.first?.nickname}</h1>
-          <h1>&</h1>
-          <h1>{data?.bride?.second?.nickname}</h1>
+        <div className="my-10 text-[#9F7730]">
+          <h1 className="text-6xl font-Caveat">
+            {data?.bride?.first?.nickname}
+          </h1>
+          <h1 className="text-lg font-semibold text-black font-Garamond">
+            dan
+          </h1>
+          <h1 className="text-6xl font-Caveat">
+            {data?.bride?.second?.nickname}
+          </h1>
         </div>
-        <div className="absolute inset-x-0 bottom-20">
-          <button className="px-5 text-white py-1 bg-[#C0AD82] rounded-2xl">
-            Buka Undangan&emsp;<strong>&#62;</strong>
-          </button>
-        </div>
+      </div>
+      <div className="absolute inset-x-0 text-center bottom-[10%]">
+        <button className="px-5 text-white py-1 bg-[#C0AD82] rounded-2xl font-Garamond">
+          Buka Undangan&emsp;<strong>&#62;</strong>
+        </button>
       </div>
     </div>
   );

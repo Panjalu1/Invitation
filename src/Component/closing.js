@@ -1,8 +1,15 @@
-import React from "react";
+import { useEffect } from "react";
+import Aos from "aos";
 
-function closing() {
+function Closing() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="container relative px-5 mx-auto space-y-5 text-sm text-center">
+    <div
+      className="container relative px-5 mx-auto space-y-5 text-sm text-center font-Garamond"
+      data-aos={"fade-up"}
+    >
       <div>
         <p>
           Merupakan suatu kebahagiaan bagi kami apabila
@@ -27,4 +34,4 @@ function closing() {
   );
 }
 
-export default closing;
+export default Closing;

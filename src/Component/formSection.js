@@ -1,11 +1,19 @@
-import React from "react";
+import { useEffect } from "react";
 import { BiGift } from "react-icons/bi";
 import Gambar3 from "../assets/img/3.svg";
 import Gambar4 from "../assets/img/4.svg";
+import Aos from "aos";
 
-function fromSection() {
+function FormSection() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
-    <div className="container relative mx-auto overflow-hidden">
+    <div
+      className="container relative mx-auto overflow-hidden font-Garamond"
+      data-aos={"fade-up"}
+    >
       <div className="my-10 text-center">Sampaikan sesuatu untuk kami</div>
       <div>
         <form className="mx-5 space-y-5">
@@ -66,4 +74,4 @@ function fromSection() {
   );
 }
 
-export default fromSection;
+export default FormSection;
