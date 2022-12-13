@@ -1,11 +1,15 @@
-import React from "react";
+import { useContext } from "react";
 import Gambar9 from "../assets/img/9.svg";
+import { BrideContext } from "../utils/Context";
 
-function footer() {
+function Footer() {
+  const data = useContext(BrideContext);
   return (
     <div className="container mx-auto text-center">
       <div className="my-5">
-        <strong>Rifqoh & Ali</strong>
+        <p className="font-bold">
+          {data?.bride?.first?.nickname} & {data?.bride?.second?.nickname}
+        </p>
       </div>
       <div>
         <img src={Gambar9} alt={Gambar9} className="mx-5"></img>
@@ -21,4 +25,4 @@ function footer() {
   );
 }
 
-export default footer;
+export default Footer;

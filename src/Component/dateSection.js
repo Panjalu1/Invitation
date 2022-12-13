@@ -1,25 +1,31 @@
-import React from "react";
+import { useContext } from "react";
 import Gambar9 from "../assets/img/9.svg";
+import { IoMdCalendar } from "react-icons/io";
+import { BrideContext } from "../utils/Context";
+import { GoLocation } from "react-icons/go";
 
-function dateSection() {
+function DateSection() {
+  const data = useContext(BrideContext);
   return (
-    <div className="container mx-auto bg-zinc-600">
+    <div className="container mx-auto">
       <div className="space-y-10 text-center">
         <p>Yang insyaAllah akan diselenggarakan pada</p>
-        <p>Sabtu Wage</p>
+        <p>{data?.marriage?.party?.day}</p>
         <br></br>
         <div className="grid grid-cols-2">
-          <div>24</div>
+          <div>{data?.marriage?.party?.date}</div>
           <div className="grid grid-rows-2">
             <div>Desember</div>
             <div>2022</div>
           </div>
         </div>
         <br></br>
-        <p>11:00 WIB s.d selesai</p>
-        <button className="px-2 bg-[#C0AD82] rounded-2xl py-1">
-          <box-icon type="solid" name="calendar-event"></box-icon>
-          &nbsp;Tambahkan ke Google Calender
+        <p className="text-xl font-semibold">
+          {data?.marriage?.party?.start_at} s.d {data?.marriage?.party?.end_at}
+        </p>
+        <button className="px-2 bg-[#C0AD82] rounded-2xl py-1 text-white">
+          <IoMdCalendar />
+          Tambahkan ke Google Calender
         </button>
         <p>di lokasi</p>
         <div className="mx-10">
@@ -34,11 +40,11 @@ function dateSection() {
           />
         </div>
         <p>
-          <strong>Kediaman Mempelai Wanita</strong> <br /> bentisan lor, RT
-          03/RW 02, Sukomarto, Jumo, Temanggung, Jateng
+          <strong>Kediaman Mempelai Wanita</strong> <br />
+          {data?.bride?.first?.location}
         </p>
-        <button className="px-5 py-1 bg-[#C0AD82] rounded-3xl">
-          Google Maps
+        <button className="px-5 py-1 bg-[#C0AD82] rounded-3xl text-white">
+          <GoLocation /> Google Maps
         </button>
         <div>
           <img src={Gambar9} alt="Gambar9" className="mx-5"></img>
@@ -48,4 +54,4 @@ function dateSection() {
   );
 }
 
-export default dateSection;
+export default DateSection;

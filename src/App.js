@@ -5,10 +5,11 @@ import GalerySection from "./Component/galerySection";
 import FormSection from "./Component/formSection";
 import ClosingSection from "./Component/closing";
 import Footer from "./Component/footer";
+import { ContextPengantin } from "./utils/Context";
 
 function App() {
   return (
-    <div>
+    <ContextPengantin>
       <Cover />
       <PointSection />
       <DateSection />
@@ -16,7 +17,7 @@ function App() {
       <FormSection />
       <ClosingSection />
       <Footer />
-    </div>
+    </ContextPengantin>
   );
 }
 

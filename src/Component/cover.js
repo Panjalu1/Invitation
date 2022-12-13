@@ -1,21 +1,31 @@
-import React from "react";
+import { useContext, useEffect } from "react";
 import Gambar1 from "../assets/img/1.svg";
 import Gambar2 from "../assets/img/2.svg";
 import Gambar3 from "../assets/img/3.svg";
 import Gambar4 from "../assets/img/4.svg";
+import { BrideContext } from "../utils/Context";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-function cover() {
+function Cover() {
+  const data = useContext(BrideContext);
+
+  useEffect(() => {
+    Aos.init({ duration: 5000 });
+  }, []);
   return (
     <div className="container relative h-screen mx-auto overflow-hidden">
       <img
         src={Gambar1}
         alt="Gambar 1"
         className="absolute w-56 left-[-50px] top-[-75px]"
+        data-aos={`fade-up`}
       ></img>
       <img
         src={Gambar2}
         alt="Gambar 2"
         className="absolute w-32 right-[-30px] top-[-110px]"
+        data-aos={`fade-up`}
       ></img>
       <img
         src={Gambar3}
@@ -27,15 +37,18 @@ function cover() {
         alt="Gambar 4"
         className="absolute bottom-0  right-[-50px] w-44"
       ></img>
-      <div className="text-center">
+      <div className="text-center" data-aos={"fade-up"}>
         <div className="my-20">
-          <p>WALIMATUL</p>
-          <p>URSY</p>
+          <p className="">
+            WALIMATUL
+            <br />
+            URSY
+          </p>
         </div>
         <div className="">
-          <h1>Rifqoh</h1>
+          <h1>{data?.bride?.first?.nickname}</h1>
           <h1>&</h1>
-          <h1>Afif</h1>
+          <h1>{data?.bride?.second?.nickname}</h1>
         </div>
         <div className="absolute inset-x-0 bottom-20">
           <button className="px-5 text-white py-1 bg-[#C0AD82] rounded-2xl">
@@ -47,4 +60,4 @@ function cover() {
   );
 }
 
-export default cover;
+export default Cover;

@@ -17,8 +17,9 @@ function fromSection() {
           />
           <textarea
             type="textArea"
-            placeholder="Tulis pesan untuk mempelai"
+            placeholder="Tulis pesan untuk mempelai..."
             id="large-input"
+            rows="4"
             className="block w-full p-2 text-gray-900 border border-gray-300 rounded-xl bg-gray-50 sm:text-md focus:ring-[#C0AD82] focus:border-[#C0AD82]"
           />
           <div className="flex items-start">
@@ -44,7 +45,7 @@ function fromSection() {
         </form>
         <div className="mt-16 space-y-5 text-center">
           <p>atau dengan gift virtual</p>
-          <button className="p-2 bg-[#C0AD82] rounded-xl text-white text-4xl">
+          <button className="p-2 bg-[#C0AD82] rounded-xl text-white text-4xl hover:shadow-sm hover:shadow-[#3C2E20]">
             <BiGift />
           </button>
         </div>
