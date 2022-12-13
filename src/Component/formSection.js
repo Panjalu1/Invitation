@@ -21,14 +21,14 @@ function FormSection() {
             type="text"
             placeholder="Nama Kamu"
             id="large-input"
-            className="block w-full p-2 text-gray-900 border border-gray-300 bg-gray-50 sm:text-md focus:ring-[#C0AD82] focus:border-[#C0AD82] rounded-3xl"
+            className="block w-full p-2 placeholder-[#C0AD82] text-gray-900 border border-gray-300 bg-gray-50 sm:text-md focus:ring-[#C0AD82] focus:border-[#C0AD82] rounded-3xl"
           />
           <textarea
             type="textArea"
             placeholder="Tulis pesan untuk mempelai..."
             id="large-input"
             rows="4"
-            className="block w-full p-2 text-gray-900 border border-gray-300 rounded-xl bg-gray-50 sm:text-md focus:ring-[#C0AD82] focus:border-[#C0AD82]"
+            className="block w-full p-2 text-gray-900 border placeholder-[#C0AD82] border-gray-300 rounded-xl bg-gray-50 sm:text-md focus:ring-[#C0AD82] focus:border-[#C0AD82]"
           />
           <div className="flex items-start">
             <div className="flex items-center h-5">

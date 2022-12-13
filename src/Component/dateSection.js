@@ -24,7 +24,7 @@ function DateSection() {
         <p className="text-2xl font-Garamond">{data?.marriage?.party?.day}</p>
         <hr className="mx-12 bg-black" />
         <div className="flex justify-center grid-cols-3 gap-x-4">
-          <div className="text-4xl text-end font-Garamond">
+          <div className="text-4xl text-end font-Garamond text-[#A07830]">
             {data?.marriage?.party?.date.slice(8, 10)}
           </div>
           <div className="grid col-span-2 text-start font-Garamond">
@@ -34,7 +34,7 @@ function DateSection() {
         </div>
         <hr className="mx-12 bg-black" />
         <p className="text-2xl font-medium font-Garamond">
-          {data?.marriage?.party?.start_at} s.d {data?.marriage?.party?.end_at}
+          {data?.marriage?.party?.start_at} s.d. {data?.marriage?.party?.end_at}
         </p>
         <div className="flex justify-center">
           <button
@@ -64,7 +64,8 @@ function DateSection() {
         </p>
         <div className="flex justify-center">
           <button className="px-5 py-1 flex bg-[#C0AD82] rounded-3xl text-white font-Garamond">
-            <GoLocation className="text-xl" /> Google Maps
+            <GoLocation className="text-xl" />
+            &emsp;Google Maps
           </button>
         </div>
         <div>
