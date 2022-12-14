@@ -32,7 +32,13 @@ function PointSections() {
         <p>Kami bermaksud menyelenggarakan resepsi</p>
         <p>pernikahan kami:</p>
         <div className="grid grid-cols-4 my-10 space-x-5">
-          <div className="mt-[20%] w-20 h-20 bg-[#4B3A28] mx-5 rounded-full"></div>
+          <div className="mt-[20%] w-20 h-20 bg-[#4B3A28] mx-5 rounded-full">
+            <img
+              src={data?.bride?.first?.avatar}
+              alt="avatar"
+              className="rounded-full"
+            ></img>
+          </div>
           <div className="col-span-3 text-start">
             <h1 className="text-3xl font-medium font-Caveat text-[#9F7730]">
               {data?.bride?.first.fullname}
@@ -49,7 +55,13 @@ function PointSections() {
           <img src={Gambar10} alt="Gambar 10" className="mx-10"></img>
         </div>
         <div className="grid grid-cols-4 mt-5 space-x-5">
-          <div className="w-20 h-20 mt-[20%] bg-[#4B3A28] rounded-full mx-5 z-40"></div>
+          <div className="w-20 h-20 mt-[20%] bg-[#4B3A28] rounded-full mx-5 z-40">
+            <img
+              src={data?.bride?.second?.avatar}
+              alt="avatar"
+              className="rounded-full"
+            ></img>
+          </div>
           <div className="z-40 col-span-3 text-xs text-start">
             <h1 className="text-3xl font-medium font-Caveat text-[#9F7730]">
               {data?.bride?.second.fullname}
